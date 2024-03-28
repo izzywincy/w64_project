@@ -7,8 +7,21 @@
 extern double dotproduct();
 
 int main() {
+	int n;
+	printf("Enter length of the vector: ");
+	scanf_s("%d", &n);
+	float* A = (float*)malloc(n * sizeof(float));
+	float* B = (float*)malloc(n * sizeof(float));
 
-
+	for (int i = 0; i < n; i++) {
+		printf("Enter Vector A: ");
+		scanf_s("%f", &A[i]);
+		printf("Enter Vector B: ");
+		scanf_s("%f", &B[i]);
+	}
+	for (int i = 0; i < n; i++) {
+		printf("%f %f", A[i], B[i]);
+	}
 
 	return 0;
 }
