@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include <windows.h>
 
-extern double dotproduct();
+extern double dotproduct(float* A, float* B, double sdot);
 
 int main() {
 	int n;
@@ -13,15 +13,20 @@ int main() {
 	float* A = (float*)malloc(n * sizeof(float));
 	float* B = (float*)malloc(n * sizeof(float));
 
+	printf("Enter Vector A: ");
 	for (int i = 0; i < n; i++) {
-		printf("Enter Vector A: ");
 		scanf_s("%f", &A[i]);
-		printf("Enter Vector B: ");
+	}
+
+	printf("Enter Vector B: ");
+	for (int i = 0; i < n; i++) {
 		scanf_s("%f", &B[i]);
 	}
+
 	for (int i = 0; i < n; i++) {
 		printf("%f %f", A[i], B[i]);
 	}
 
+	double sdot = dotproduct(&A, &B, sdot)
 	return 0;
 }
