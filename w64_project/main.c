@@ -11,6 +11,9 @@ float randomFloat(float min, float max) {
 }
 
 int main() {
+    clock_t start_time, end_time;
+    double cpu_time_used;
+
     int n = 0;
     printf("Enter length of the vector: ");
     scanf_s("%d", &n);
@@ -37,15 +40,28 @@ int main() {
         scanf_s("%f", &B[i]);
     }
     */
+
+    /*
     for (int i = 0; i < n; i++) {
         printf("%f %f\n", A[i], B[i]);
     }
+    */
 
     float sdot = 0;
- 
-    sdot = dotproduct(sdot, A, B, n);
 
-    printf("Dot product: %f\n", sdot);
+    // Record the start time
+    start_time = clock();
+    // Get sdot
+    sdot = dotproduct(sdot, A, B, n);
+    // Record the end time
+    end_time = clock();
+
+    printf("\nDot product: %f\n", sdot);
+
+    // Calculate the CPU time used
+    cpu_time_used = (double)(end_time - start_time) / CLOCKS_PER_SEC;
+
+    printf("\nCPU time used by x86-64 with vector length %d: %f seconds\n",n, cpu_time_used);
 
     // Free allocated memory
     free(A);
