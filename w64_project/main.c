@@ -1,16 +1,32 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 #include <windows.h>
 
-extern double dotproduct(float* A, float* B);
+extern float dotproduct(float sdot, float* A, float* B, int n);
+
+// Function to generate a random float between min and max
+float randomFloat(float min, float max) {
+    return min + (float)rand() / ((float)RAND_MAX / (max - min));
+}
 
 int main() {
-    int n;
+    int n = 0;
     printf("Enter length of the vector: ");
     scanf_s("%d", &n);
+
+    // Seed the random number generator with current time
+    srand(time(NULL));
+
     float* A = (float*)malloc(n * sizeof(float));
     float* B = (float*)malloc(n * sizeof(float));
 
+    // Generate random numbers and store them in the arrays
+    for (int i = 0; i < n; i++) {
+        A[i] = randomFloat(0.0, 100.0); // Random float between 0.0 and 100.0
+        B[i] = randomFloat(0.0, 100.0); // Random float between 0.0 and 100.0
+    }
+    /*
     printf("Enter Vector A: ");
     for (int i = 0; i < n; i++) {
         scanf_s("%f", &A[i]);
@@ -20,13 +36,16 @@ int main() {
     for (int i = 0; i < n; i++) {
         scanf_s("%f", &B[i]);
     }
-
+    */
     for (int i = 0; i < n; i++) {
         printf("%f %f\n", A[i], B[i]);
     }
 
-    double sdot = dotproduct(A, B);
-    printf("Dot product: %lf\n", sdot);
+    float sdot = 0;
+ 
+    sdot = dotproduct(sdot, A, B, n);
+
+    printf("Dot product: %f\n", sdot);
 
     // Free allocated memory
     free(A);
