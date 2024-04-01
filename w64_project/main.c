@@ -62,7 +62,7 @@ int main() {
         cpu_time_used = (double)(end_time - start_time) / CLOCKS_PER_SEC;
 
 
-        printf("\nCPU time: %f seconds\n", cpu_time_used);
+        printf("\nCPU time: %f seconds", cpu_time_used);
 
         asmAverage += cpu_time_used;
 
