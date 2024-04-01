@@ -69,3 +69,11 @@ int main() {
 
     return 0;
 }
+
+
+float dotproduct(float sdot, float* A, float* B, int n) {
+    for (int i = 0; i < n; i++) {
+        sdot += A[i] * B[i];
+    }
+    return sdot;
+}
