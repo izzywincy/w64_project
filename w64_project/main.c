@@ -36,8 +36,8 @@ int main() {
 
         // Generate random numbers and store them in the arrays
         for (int i = 0; i < n; i++) {
-            A[i] = (float)rand() / RAND_MAX;;
-            B[i] = (float)rand() / RAND_MAX;;
+            A[i] = fmodf(((float)rand() / RAND_MAX), 0.5);
+            B[i] = fmodf(((float)rand() / RAND_MAX), 0.5);
         }
 
 
