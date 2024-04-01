@@ -1,5 +1,6 @@
 # DEBUG MODE
 ## Runs from 2^20
+
 ![20 (1)](https://github.com/izzywincy/w64_project/assets/113000642/25cded6b-c9f8-4ff2-a946-f2c061903c5e)
 
 ![20 (2)](https://github.com/izzywincy/w64_project/assets/113000642/5e826e99-1244-4f37-be24-66b48db5262a)
@@ -8,7 +9,7 @@
 
 ![20 (4)](https://github.com/izzywincy/w64_project/assets/113000642/345b1820-7ab3-4620-aa7d-149231d2b942)
 
-![20 (5)](https://github.com/izzywincy/w64_project/assets/113000642/4fe77f3c-e652-43c2-84e8-ecfc927b0da6)
+![image](https://github.com/izzywincy/w64_project/assets/113000642/5655fd7e-2ed7-4ca6-b614-7f33be3da79c)
 
 ## Runs from 2^24
 
@@ -24,3 +25,12 @@
 
 ## Runs from 2^26
 
+![26 (1)](https://github.com/izzywincy/w64_project/assets/113000642/89acac38-eb02-4326-bd87-d60eaad11d7d)
+
+![26 (2)](https://github.com/izzywincy/w64_project/assets/113000642/4c085bba-aa88-4684-91f1-7af32f8d459d)
+
+![26 (3)](https://github.com/izzywincy/w64_project/assets/113000642/acb7d483-f3b7-4cf3-a2bf-c71b0ee766b9)
+
+![26 (4)](https://github.com/izzywincy/w64_project/assets/113000642/7cf7bc3c-2823-414d-b6a9-7f5dc7c199bb)
+
+![26 (5)](https://github.com/izzywincy/w64_project/assets/113000642/d602a832-2342-4644-ba9b-1b6b06d0d68a)
