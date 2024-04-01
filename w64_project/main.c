@@ -28,62 +28,64 @@ int main() {
     // Seed the random number generator with current time
     srand((unsigned int)time(NULL));
 
-    float* A = (float*)malloc(n * sizeof(float));
-    float* B = (float*)malloc(n * sizeof(float));
+    for (int count = 0; count < 30; count++) {
+        printf("Run %d", count + 1);
+        float* A = (float*)malloc(n * sizeof(float));
+        float* B = (float*)malloc(n * sizeof(float));
 
-    // Generate random numbers and store them in the arrays
-    for (int i = 0; i < n; i++) {
-        A[i] = (float)rand() / RAND_MAX;; 
-        B[i] = (float)rand() / RAND_MAX;; 
+        // Generate random numbers and store them in the arrays
+        for (int i = 0; i < n; i++) {
+            A[i] = (float)rand() / RAND_MAX;;
+            B[i] = (float)rand() / RAND_MAX;;
+        }
+
+
+        /*
+          for (int i = 0; i < n; i++) {
+              printf("%f %f = %f\n", A[i], B[i], A[i] * B[i]);
+          }*/
+
+
+        float sdot = 0.0;
+
+        printf("\n- x86_64");
+
+        // Record the start time
+        start_time = clock();
+        // Get sdot
+        sdot = dotproduct(sdot, A, B, n);
+        // Record the end time
+        end_time = clock();
+
+        printf("\nDot product: %f", sdot);
+
+        // Calculate the CPU time used
+        cpu_time_used = (double)(end_time - start_time) / CLOCKS_PER_SEC;
+
+        printf("\nCPU time: %f seconds", cpu_time_used);
+
+        sdot = 0.0;
+
+        printf("\n- C program");
+
+        start_time = clock();
+        // Get sdot
+        sdot = dot_product(A, B, n);
+        // Record the end time
+        end_time = clock();
+
+        printf("\nDot product: %f", sdot);
+
+        // Calculate the CPU time used
+        cpu_time_used = (double)(end_time - start_time) / CLOCKS_PER_SEC;
+
+        printf("\nCPU time: %f seconds\n", cpu_time_used);
+
+
+        // Free allocated memory
+        free(A);
+        free(B);
     }
-
-
-  /*
-    for (int i = 0; i < n; i++) {
-        printf("%f %f = %f\n", A[i], B[i], A[i] * B[i]);
-    }*/
-    
-
-    float sdot = 0.0 ;
-
-    printf("\n- x86_64");
-
-    // Record the start time
-    start_time = clock();
-    // Get sdot
-    sdot = dotproduct(sdot, A, B, n);
-    // Record the end time
-    end_time = clock();
-
-    printf("\nDot product: %f", sdot);
-
-    // Calculate the CPU time used
-    cpu_time_used = (double)(end_time - start_time) / CLOCKS_PER_SEC;
-
-    printf("\nCPU time used with vector length %d: %f seconds",n, cpu_time_used);
-
-    sdot = 0.0;
-
-    printf("\n- C program");
-
-    start_time = clock();
-    // Get sdot
-    sdot = dot_product(A, B, n);
-    // Record the end time
-    end_time = clock();
-
-    printf("\nDot product (C program): %f", sdot);
-
-    // Calculate the CPU time used
-    cpu_time_used = (double)(end_time - start_time) / CLOCKS_PER_SEC;
-
-    printf("\nCPU time used by C program with vector length %d: %f seconds\n", n, cpu_time_used);
-
-
-    // Free allocated memory
-    free(A);
-    free(B);
-
     return 0;
 }
 
