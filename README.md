@@ -23,9 +23,16 @@
 # RELEASE MODE
 ## Runs from 2^20
 
+![20_04](https://github.com/izzywincy/w64_project/assets/90037135/ff51bf3b-5e17-400d-bebe-aa69f6e3d924)
+![20_05](https://github.com/izzywincy/w64_project/assets/90037135/0a1be644-d16a-4918-868f-2118e18cc63c)
+![20_06](https://github.com/izzywincy/w64_project/assets/90037135/59af64ff-2fd2-4fc0-8253-1e0606036e7f)
+
 
 ## Runs from 2^24
 
+![24_04](https://github.com/izzywincy/w64_project/assets/90037135/4871eeb5-5ced-4283-bb49-8180e3bb64ff)
+![24_05](https://github.com/izzywincy/w64_project/assets/90037135/e7ff7ae8-02ff-4f0b-807b-658a8c5e7215)
+![24_06](https://github.com/izzywincy/w64_project/assets/90037135/ba796a25-8c17-4550-81ec-fda640f6e266)
 
 
 ## Runs from 2^30
