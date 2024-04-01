@@ -37,4 +37,9 @@
 
 ## Runs from 2^30
 
+![30_04](https://github.com/izzywincy/w64_project/assets/90037135/634f7936-32e8-4a7e-a644-1e953fe0955d)
+![30_05](https://github.com/izzywincy/w64_project/assets/90037135/0293d9cc-b68f-41eb-8c58-817212f2c9db)
+![30_06](https://github.com/izzywincy/w64_project/assets/90037135/d658dee1-3504-4303-b957-e8f21e7c708c)
+
+
 
