@@ -21,12 +21,13 @@ int main() {
     double cpu_time_used;
 
     int n = 0;
+    float cAverage = 0;
+    float asmAverage = 0;
     printf("Enter length of the vector: ");
     scanf_s("%d", &n);
 
-    n = pow(2, n);
-    // Seed the random number generator with current time
     srand((unsigned int)time(NULL));
+    n = pow(2, n);
 
     for (int count = 0; count < 30; count++) {
         printf("Run %d", count + 1);
@@ -40,11 +41,11 @@ int main() {
         }
 
 
-        /*
-          for (int i = 0; i < n; i++) {
+        
+        /*  for (int i = 0; i < n; i++) {
               printf("%f %f = %f\n", A[i], B[i], A[i] * B[i]);
-          }*/
-
+          }
+        */
 
         float sdot = 0.0;
 
@@ -58,11 +59,14 @@ int main() {
         end_time = clock();
 
         printf("\nDot product: %f", sdot);
-
+        
         // Calculate the CPU time used
         cpu_time_used = (double)(end_time - start_time) / CLOCKS_PER_SEC;
 
-        printf("\nCPU time: %f seconds", cpu_time_used);
+
+        printf("\nCPU time: %f seconds\n", cpu_time_used);
+
+        asmAverage += cpu_time_used;
 
         sdot = 0.0;
 
@@ -80,12 +84,15 @@ int main() {
         cpu_time_used = (double)(end_time - start_time) / CLOCKS_PER_SEC;
 
         printf("\nCPU time: %f seconds\n", cpu_time_used);
+        cAverage += cpu_time_used;
 
 
         // Free allocated memory
         free(A);
         free(B);
     }
+    printf("\nAverage run time of x86_64: %f", asmAverage / 30); 
+    printf("\nAverage run time of C program: %f\n", cAverage / 30);
     return 0;
 }
 
