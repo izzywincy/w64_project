@@ -13,14 +13,21 @@
 ![24_03](https://github.com/izzywincy/w64_project/assets/90037135/cb11bba5-8d09-4d77-840e-a470e3f03f48)
 
 
-## Runs from 2^26
+## Runs from 2^30
 
-![26 (1)](https://github.com/izzywincy/w64_project/assets/113000642/89acac38-eb02-4326-bd87-d60eaad11d7d)
+![30_01](https://github.com/izzywincy/w64_project/assets/90037135/74146675-9b82-4832-aeea-f960dad6978e)
+![30_02](https://github.com/izzywincy/w64_project/assets/90037135/cbe4b79d-63ce-44ca-a67c-7543273aa2c0)
+![30_03](https://github.com/izzywincy/w64_project/assets/90037135/56f59963-da5f-485a-859c-6a84a63c0d60)
 
-![26 (2)](https://github.com/izzywincy/w64_project/assets/113000642/4c085bba-aa88-4684-91f1-7af32f8d459d)
 
-![26 (3)](https://github.com/izzywincy/w64_project/assets/113000642/acb7d483-f3b7-4cf3-a2bf-c71b0ee766b9)
+# RELEASE MODE
+## Runs from 2^20
 
-![26 (4)](https://github.com/izzywincy/w64_project/assets/113000642/7cf7bc3c-2823-414d-b6a9-7f5dc7c199bb)
 
-![26 (5)](https://github.com/izzywincy/w64_project/assets/113000642/d602a832-2342-4644-ba9b-1b6b06d0d68a)
+## Runs from 2^24
+
+
+
+## Runs from 2^30
+
+
