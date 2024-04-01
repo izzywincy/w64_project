@@ -14,8 +14,6 @@ float dot_product(float* A, float* B, int n) {
     return sdot;
 }
 
-
-
 int main() {
     clock_t start_time, end_time;
     double cpu_time_used;
