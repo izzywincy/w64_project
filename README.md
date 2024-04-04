@@ -42,4 +42,6 @@
 ![30_06](https://github.com/izzywincy/w64_project/assets/90037135/d658dee1-3504-4303-b957-e8f21e7c708c)
 
 
+## Analysis
 
+In debug mode, x86_64 consistently outperforms the C program across all test cases in terms of speed. However, when it comes to release mode, the average runtime of the C program is faster than x86_64, but there are instances where x86_64 still performs better than C program.  There are certain scenarios in release mode that both C and x86_64 program runtimes are similar. 
